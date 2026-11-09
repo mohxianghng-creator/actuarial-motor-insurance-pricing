@@ -1,0 +1,40 @@
+{
+  "python": {
+    "passed": 35,
+    "skipped": 2,
+    "reason_for_skips": "Empirical output files excluded"
+  },
+  "r_generic": {
+    "passed": 9
+  },
+  "python_source_compilation": "passed including build_demo.py",
+  "private_artifact_extensions": "none found",
+  "personal_paths": "none found",
+  "downloaded_complete_original": {
+    "files": 171,
+    "matches_workspace_original": true,
+    "modified": false
+  },
+  "scope": "Source selection and synthetic checks; no empirical model refitting or new predictive validation.",
+  "dashboard_demo": {
+    "dataset": "synthetic",
+    "risks": 600,
+    "financial_comparisons": 3600,
+    "max_absolute_error": 1.5916157281026244e-12,
+    "python_reference_checks": 0,
+    "empty_cohort": true,
+    "empty_search": true,
+    "filter_combinations": 12,
+    "invalid_inputs_hide_stale_results": true,
+    "scenario_recovery": true,
+    "rejected_import_cases": 5,
+    "zero_capacity": true,
+    "nonfinite_rejection": true,
+    "csv_rows": 600,
+    "visible_graphs": 6,
+    "mobile": true,
+    "browser_errors": [],
+    "external_requests": 0
+  },
+  "real_dashboard_review": "Separate local copy; records and model scores unchanged. See local_dashboard/DASHBOARD_REGRESSION_CHECKS.json in the private delivery."
+}
