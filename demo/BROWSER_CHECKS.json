@@ -1,0 +1,24 @@
+{
+  "all_passed": true,
+  "offline": true,
+  "report": {
+    "dataset": "synthetic",
+    "risks": 600,
+    "financial_comparisons": 3600,
+    "max_absolute_error": 1.5916157281026244e-12,
+    "python_reference_checks": 0,
+    "empty_cohort": true,
+    "empty_search": true,
+    "filter_combinations": 12,
+    "invalid_inputs_hide_stale_results": true,
+    "scenario_recovery": true,
+    "rejected_import_cases": 5,
+    "zero_capacity": true,
+    "nonfinite_rejection": true,
+    "csv_rows": 600,
+    "visible_graphs": 6,
+    "mobile": true,
+    "browser_errors": [],
+    "external_requests": 0
+  }
+}

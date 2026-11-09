@@ -1,0 +1,115 @@
+{
+  "version": "2.0.0",
+  "seed": 20261105,
+  "data_path": "data/2026 CAS Asia Summer Program Dataset.xlsx",
+  "equal_exposure_assumption": true,
+  "currency": "unspecified dataset monetary units",
+  "cv": {
+    "folds": 5,
+    "repeats": 2,
+    "inner_calibration_fraction": 0.2,
+    "log_calibration_prior_sd": 0.2,
+    "selection_rule": "simplest_nonconstant_within_best_heuristic_one_standard_error",
+    "bootstrap_repetitions": 1000
+  },
+  "candidates": [
+    "Constant",
+    "Frequency_GLM_Pooled",
+    "Frequency_GAM_Pooled",
+    "GLM_BodyTail",
+    "GAM_BodyTail",
+    "GBM_BodyTail",
+    "GLM_FullSeverity",
+    "GBM_Hurdle",
+    "Tweedie_GAM"
+  ],
+  "calibration_modes": [
+    "none",
+    "full",
+    "credibility"
+  ],
+  "severity_credibility_prior_claims": 5000,
+  "body_quantile": 0.99,
+  "pricing": {
+    "trend_factor": 1.0,
+    "development_factor": 1.0,
+    "fixed_expense": 15.0,
+    "variable_expense_ratio": 0.15,
+    "tax_ratio": 0.0,
+    "margin_mode": "smooth_tiered_constant",
+    "flat_risk_margin": 15.0,
+    "tier_quantiles": [
+      0.5,
+      0.85
+    ],
+    "tier_risk_margins": [
+      10.0,
+      20.0,
+      35.0
+    ],
+    "transition_width": 20.0,
+    "commercial_adjustment": 0.0,
+    "enforce_cost_floor": true
+  },
+  "risk_budget": {
+    "simulations": 5000,
+    "cost_of_capital": 0.12,
+    "frequency_systematic_cvs": [
+      0.0,
+      0.1
+    ],
+    "severity_factors": [
+      1.0,
+      1.25
+    ],
+    "tail_quantiles": [
+      0.9,
+      0.95,
+      0.99
+    ],
+    "common_event_probability": 0.02,
+    "common_event_affected_share": 0.1,
+    "common_event_loss_per_affected_policy": 20000.0
+  },
+  "commercial": {
+    "competitor_multipliers": [
+      0.85,
+      1.0,
+      1.15
+    ],
+    "competitor_risk_tilts": [
+      -0.15,
+      0.0,
+      0.15
+    ],
+    "elasticities": [
+      2.0,
+      5.0,
+      10.0
+    ],
+    "bound_loss_multipliers": [
+      1.0,
+      1.15
+    ],
+    "reference_conversion": 0.3,
+    "quote_adjustments": [
+      -10.0,
+      0.0,
+      10.0,
+      20.0
+    ],
+    "expected_capacity": 2500,
+    "minimum_expected_policies": 1500,
+    "minimum_worst_expected_contribution": 0.0
+  },
+  "monitoring": {
+    "portfolio_AE_review_lower": 0.9,
+    "portfolio_AE_review_upper": 1.1,
+    "minimum_segment_claims": 30,
+    "minimum_effective_loss_count": 20,
+    "maximum_top_loss_share": 0.2,
+    "PSI_review_threshold": 0.2,
+    "quote_jump_review_amount": 5.0
+  },
+  "jurisdiction": "unspecified; jurisdictional review required"
+}

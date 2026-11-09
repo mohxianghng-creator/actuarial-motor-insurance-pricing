@@ -1,0 +1,12 @@
+{
+  "name": "motor-insurance-pricing",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Motor insurance pricing research. The generated dashboard has no runtime package dependencies.",
+  "scripts": {
+    "test:dashboard": "node test_dashboard.cjs"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1"
+  }
+}
